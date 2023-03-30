@@ -981,7 +981,7 @@
     height: 70px;
     line-height: 67px;
     display: inline-block;
-    border: 2px dashed #ffffff3d;
+    border: 2px dotted #ffffff3d;
     border-radius: 100%;
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
