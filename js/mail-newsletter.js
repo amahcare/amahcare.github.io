@@ -1,4 +1,5 @@
-var cn = "http://localhost:50753/requestnoti.ashx?Comando=";
+//var cn = "http://localhost:50753/requestnoti.ashx?Comando=";
+var cn = "https://aetechnologies.somee.com/AE/Admin/requestnoti.ashx?Comando=";
 var loader = document.getElementById("loader");
 
 function registrarmeNews(){
