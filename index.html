@@ -1008,8 +1008,8 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12 wow fadeInUp" data-wow-delay="0.2s">
 
-                    <form action="#">
-                        <div class="appoinment-inner">
+                
+                       <div class="appoinment-inner">
 
                             <div class="appoinment-title">
                                 <h3>Únete a nuestra red de colaboradores</h3>
@@ -1018,26 +1018,26 @@
                             <div class="row">
                                 <div class="col-lg-6 col-12">
                                     <div class="form-group">
-                                        <input type="text" name="Name" placeholder="Nombre" required="required">
+                                        <input type="text" id="Nombre" name="Name" placeholder="Nombre" required="required">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-12">
                                     <div class="form-group">
-                                        <input type="email" name="Email" placeholder="Correo" required="required">
+                                        <input type="email" id="Correo" name="Email" placeholder="Correo" required="required">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-12">
                                     <div class="form-group">
-                                        <input type="text" name="Phone" placeholder="Teléfono" required="required">
+                                        <input type="text" id="Telefono" name="Phone" placeholder="Teléfono" required="required">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-12">
                                     <div class="form-group">
-                                        <select>
-                                            <option value="1" selected="selected">Categoría</option>
-                                            <option value="2">Profesional de Salud</option>
-                                            <option value="3">Proveedor de salud</option>
-                                            <option value="4">Hospital/Organización</option>
+                                        <select id="Cat">
+                                            <option value="No especificado" selected="selected">Categoría</option>
+                                            <option value="Profesional de salud">Profesional de Salud</option>
+                                            <option value="Proveedor de salu">Proveedor de salud</option>
+                                            <option value="Hospital/Organización">Hospital/Organización</option>
                                         </select>
                                     </div>
                                 </div>
@@ -1049,18 +1049,17 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea name="message" placeholder="Cuentanos tu experiencia como profesional de la salud..."
+                                        <textarea id="Com" name="message" placeholder="Cuentanos tu experiencia como profesional de la salud..."
                                             required="required"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="contact-btn">
-                                        <button type="submit" class="theme-btn">Registrarme</button>
+                                        <button type="submit" onclick="registrarme()" class="theme-btn">Registrarme</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </form>
 
                 </div>
             </div>
@@ -1282,17 +1281,17 @@
 
                 <div class="col-lg-6 col-12 wow fadeInRight" data-wow-delay="0.2s">
                     <div class="n-email-submit">
-                        <form action="#" method="get">
+                       
                             <div class="email-box">
                                 <div class="form-group">
-                                    <input type="email" name="Email" placeholder="Agrega tu correo electonico aqui..." required="required">
+                                    <input type="email" id="CorreoNews" name="Email" placeholder="Agrega tu correo electonico aqui..." required="required">
                                 </div>
                                 <div class="e-submit-btn">
-                                    <button type="submit" class="theme-btn">Suscrebete &nbsp;&nbsp;<i class="far fa-envelope"></i>
+                                    <button type="submit" onclick="registrarmeNews()" class="theme-btn">Suscrebete &nbsp;&nbsp;<i class="far fa-envelope"></i>
                                     </button>
                                 </div>
                             </div>
-                        </form>
+                       
                     </div>
                 </div>
 
@@ -1438,6 +1437,11 @@
     <script src="https://themes.themewild.com/medicare/assets/js/main.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
+    
+        <script src="js/mail-colaborador.js"></script>
+    <script src="js/mail-newsletter.js"></script>
+    <script src="js/alertas.js"></script>
+
 
     <script type="text/javascript">
         var links = document.querySelectorAll( '.desplazar' );
