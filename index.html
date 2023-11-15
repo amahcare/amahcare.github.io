@@ -5,16 +5,1475 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+    <meta name="keywords" content="Site keywords here">
+    <meta name="description" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content='https://www.amahcare.com/' property='og:url'/>
+    <meta content='Amah Care' property='og:title'/>
+    <meta content='🚑 Todo para la salud 💉' property='og:description'/>
+    <meta content='https://amahcare.github.io/img/og.png' property='og:image'/>
+
+    <title>Amah Care</title>
+
+    <link rel="icon" href="img/ico.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://themes.themewild.com/medicare/assets/css/cube-portfolio.min.css">
+  
+    <link rel="stylesheet" href="https://themes.themewild.com/medicare/assets/css/owl.carousel.min.css">
+  
+    <link rel="stylesheet" href="https://themes.themewild.com/medicare/assets/css/slicknav.min.css">
+  
+    <link rel="stylesheet" href="https://themes.themewild.com/medicare/assets/css/maginific-popup.min.css">
+  
+    <link rel="stylesheet" href="https://themes.themewild.com/medicare/assets/css/animate.min.css">
+  
+    <link rel="stylesheet" href="https://themes.themewild.com/medicare/assets/css/nice-select.css">
+  
+    <link rel="stylesheet" href="https://themes.themewild.com/medicare/assets/css/datepicker.css">
+  
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+  
+    <link rel="stylesheet" href="https://themes.themewild.com/medicare/assets/css/icofont.css">
+  
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  
+    <link rel="stylesheet" href="css/wa.css">
+    <link rel="stylesheet" href="css/alertas.css">
+
+    <style>                                                                 
+    @media only screen and (max-width: 568px) {
+        .col-2 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+    .cat{
+        font-size: 10px;;
+    }
+        .owl-dots{
+      display: none;
+    }
+    }
+
+
+    .primeralinea {
+  text-indent: 40px;
+  font-size: 19px;
+        text-align: justify;
+}
+ 
+        .particles-js-canvas-el{
+  position:absolute;
+  z-index: 2;
+}
+
+
+</style>
 
 </head>
 
 <body>
-    <h1>Forbidden</h1>
-    
-You don't have permission to access this resource.<br>
 
-Additionally, a 403 Forbidden error was encountered while trying to use an ErrorDocument to handle the request.
+       <div id="loader" class="preloader" style="background-image: linear-gradient(rgba(77, 212, 200, 0.78), rgba(77, 212, 200, 0.78)), url('img/bgServ.jpg'); background-size: cover;" >
+        <div class="loader-container">
+            <center><img src="img/heartbeat.gif" width="50%" alt="" ></center>
+           <!---<div class="loader"></div>-->
+        </div>
+    </div>
+
+    <div id="WABoton"></div>
+
+    <header class="header" >
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-2 col-12 my-auto">
+                    <div class="top-logo">
+                        <a href="index.html"><img src="img/logo.png"
+                                alt="logo.png"></a>
+                    </div>
+                    <div class="mobile-nav"></div>
+                </div>
+
+                <div class="col-lg-9 col-md-10 col-12">
+                    <div class="main-menu-top">
+
+                        <div class="main-menu">
+                            <div class="navbar">
+                                <div class="nav-item">
+
+                                    <ul class="nav-menu mobile-menu navigation">
+                                        <li class="active"><a class="desplazar"  moveTo="inicio" href="#">Inicio</a></li>
+                                        <li><a class="desplazar" moveTo="about" href="#">Quiénes somos</a></li>
+                                        
+                                        <li><a class="desplazar" moveTo="servicios" href="#">Servicios</a></li>
+                                        <li><a class="desplazar" moveTo="cat" href="#">Categorías</a></li>
+                                        <li><a class="desplazar" moveTo="blogs" href="#">Blogs</a></li>
+                                        <li><a class="desplazar" moveTo="contacto" href="#">Contacto</a></li>
+
+                                        <center>  <a href="#" target="_blank" class="btnSesion" style="display:none">Iniciar Sesión  &nbsp;&nbsp;<i class="far fa-unlock-alt"></i></a></center>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="h-menu-right">
+                            <a href="#" target="_blank" class="theme-btn">Iniciar Sesión  &nbsp;&nbsp;<i class="far fa-unlock-alt"></i></a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+     <div class="toast" id="toast" style="display: none">
+      <div class="toast-content">
+        <i class="far fa-solid fa-warning check"></i>
+        <div class="message">
+          <span class="text text-1" id="txtTipo">Mensaje</span>
+          <span class="text text-2" id="txtNota"></span>
+        </div>
+      </div>
+      <i class="far fa-solid fa-times close"></i>
+      <div class="progress "></div>
+    </div>
+    
+
+    <section class="hero-area" id="inicio">
+        <div class="hero-slider owl-carousel owl-theme">
+
+            <div class="single-slider" style="background-image:url('img/slider-1.jpg')">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-7 col-md-8 col-12">
+                      <div class="hero-content">
+                        <!--<h1>EL HOSPITAL EN EL CONFORT DEL HOGAR</h1>-->
+                        <h1>TODO PARA LA SALUD</h1>
+                        <p>
+                            Amah Care - Es el software de salud que reúne tecnología ideal
+                          para todos en todo momento, integra eficientemente todos los servicios de salud, 
+                          para tener un impacto positivo en nuestros pacientes. 
+                          Empoderamos al equipo de salud y le brindamos seguridad a los usuarios en una sola plataforma integrada.
+                          </p>
+                        <div class="hero-button">
+                          <a href="https://play.google.com/store/apps/details?id=app.amah.care"  class="theme-btn">Android App <i class="fab fa-google-play"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="col-lg-5 col-md-8 col-12" style="z-index: 2;">
+                        <br><br>
+                        <img src="img/ban_bg1.png" >
+                    </div>
+                      
+                  </div>
+                </div>
+              </div>
+
+              <div class="single-slider" style="background-image:url('img/slider-2.jpg')">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-7 col-md-8 col-12">
+                      <div class="hero-content">
+                        <!--<span>EL HOSPITAL EN EL CONFORT DEL HOGAR</span>-->
+                        <h1>TODO PARA LA SALUD</h1>
+                        <p>Nuestra meta es impulsar la salud de México y 
+                            Latinoamérica de una manera más práctica innovando tecnológicamente. 
+                            Descarga - AmahCare y disfruta todos los servicios de salud en un solo lugar.
+                          </p>
+                        <div class="hero-button">
+                          <a href="https://play.google.com/store/apps/details?id=app.amah.care" class="theme-btn">Android App <i class="fab fa-google-play"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                        <div class="col-lg-5 col-md-8 col-12" style="z-index: 2;">
+                      <br><br><br>
+                      <img src="img/ban_bg1.png" >
+                  </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+    </section >
+
+    <section class="about-area"  id="boceto" style="background-color: #2c7474cf;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-12 wow fadeInLeft" data-wow-delay="0.1s"
+          style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+          <div class="about-image-content">
+            <div class="about-img">
+              <img src="img/boceto.png" alt="#">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <section class="about-area"  id="about">
+        <div class="container">
+          <div class="row">
+    
+            <div class="col-lg-6 col-12 wow fadeInLeft" data-wow-delay="0.1s"
+              style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+              <div class="about-image-content">
+                <div class="about-img">
+                        <div id="particles-js" ></div>
+                  <img src="img/about1.png" alt="#">
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="col-lg-6 col-12 wow fadeInRight" data-wow-delay="0.2s"
+              style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+              <div class="about-content">
+                <div class="about-c-title">
+                  <span>¿QUÉ ES AMAH CARE?</span>
+                  <!--<h4>Asistente médico Avanzado en el Hogar</h3>--><br>
+                    <p class="primeralinea">
+                        <b>Amah Care</b> ha desarrollado la primera plataforma integral de salud en México, 
+                        la cual es un ecosistema que brinda acceso a una variedad de servicios médicos, 
+                        incluyendo un expediente electrónico y un recetario digital, combinado con una plataforma de comercio electrónico fácil de usar. 
+                        Con nuestra app, los pacientes pueden encontrar todo lo que necesitan, desde medicamentos y equipo médico hasta atención médica en clínicas, 
+                        en el hogar y en línea, así como servicios de ambulancia y otras categorías.
+                    </p> 
+                    <br>
+                    <p class="primeralinea"> 
+                         En <b>Amah Care</b>, nos esforzamos por brindar tranquilidad y mejorar la calidad de vida de nuestros usuarios, 
+                        ofreciéndoles una solución Holística, 
+                        para la atención médica en todo el proceso de salud desde el pre hasta el post, Hospitalización.
+                    </p>
+                </div>
+                <div class="about-content-list" style="display:none">
+                  <div class="row">
+                    <div class="col-lg-9 col-md-9 col-12">
+                      <ul>
+                        <li><i class="far fa-check-circle"></i>Hospitales</li>
+                        <li><i class="far fa-check-circle"></i>Farmacias</li>
+                        <li><i class="far fa-check-circle"></i>Laboratorios</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- <a  class="theme-btn">Learn More</a>-->
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+
+
+
+    <section class="features-area" style="background-image:  url('img/porque.jpg'); background-size: cover; ">
+        <div class="container">
+          <div class="row" >
+            <div class="col-12 wow zoomIn" data-wow-delay="0.1s"
+              style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
+              <div class="feature-s-title">
+                <h3>¿Por qué usar Amah Care?</h3>
+                <!--<p>It is a long established fact that a reader will be distracted.</p>-->
+              </div>
+            </div>
+          </div>
+          <div class="row" style="opacity: 0.8;">
+            <div class="col-lg-3 col-md-6 col-12 wow fadeInLeft" data-wow-delay="0.3s"
+              style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+              <div class="single-features">
+                <div class="feature-icon">
+    
+                  <i class="far fa-phone"></i>
+    
+                </div>
+                <div class="feature-content">
+                  <h5>Atención 24/7</h5>
+                  <p>Puedes solicitar atención especializada por día, semana, mes o incluso años.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.5s"
+              style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <div class="single-features">
+                <div class="feature-icon">
+                  <i class="far fa-book"></i>
+                </div>
+                <div class="feature-content">
+                  <h5>Expediente Médico Virtual</h5>
+                  <p>Sube tus documentos a la nube de Amah Care.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.5s"
+              style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <div class="single-features">
+                <div class="feature-icon">
+                  <i class="far fa-heartbeat"></i>
+                </div>
+                <div class="feature-content">
+                  <h5>Signos Vitales</h5>
+                  <p>Descarga la aplicación para ver los signos vitales de tu familiar.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 wow fadeInRight" data-wow-delay="0.3s"
+              style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+              <div class="single-features">
+                <div class="feature-icon">
+                  <i class="far fa-shopping-cart"></i>
+                </div>
+                <div class="feature-content">
+                  <h5>Medicamentos</h5>
+                  <p>Cotiza en línea tus medicamentos, compra y recíbelos en tu hogar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="servicios" class="service-area" style="background-image: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)), url('img/bgServi.jpg'); background-size: cover;" >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-12">
+              <div class="section-title">
+                <!--<span>Our Services</span>-->
+                <h3>Nuestros Servicios</h3>
+                <!--<p>It is a long established fact that a reader will be distracted.</p>-->
+              </div>
+            </div>
+          </div>
+          <div class="row" >
+    
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInLeft" data-wow-delay="0.2s"
+              style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+              <div class="single-service">
+                <div class="single-service-content">
+                  <i class="far fa-cart-plus"></i>
+                  <div class="service-main-content">
+                    <h4><a href="service-details.html">Ecomerce Amah</a></h4>
+                    <p>Todo en productos y servicios de salud con diferentes proveedores.</p>
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.5s"
+              style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <div class="single-service">
+                <div class="single-service-content">
+                  <i class="far fa-book"></i>
+                  <div class="service-main-content">
+                    <h4><a href="service-details.html">Expediente Clínico</a></h4>
+                    <p>Historia clínica, Indicadores, Recetas, Usuarios y Anexos.</p>
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInRight" data-wow-delay="0.2s"
+              style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+              <div class="single-service">
+                <div class="single-service-content">
+                  <i class="far fa-stethoscope"></i>
+                  <div class="service-main-content">
+                    <h4><a href="service-details.html">Monitorización</a></h4>
+                    <p>Seguimientos de signos vitales de forma remota y en tiempo real.</p>
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInLeft" data-wow-delay="0.2s"
+              style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+              <div class="single-service">
+                <div class="single-service-content">
+                  <i class="far  fa-user-nurse "></i>
+                  <div class="service-main-content">
+                    <h4><a href="service-details.html">Home Care</a></h4>
+                    <p>Médicos y enfermeros a domicilio con equipo multidisciplinario.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.5s"
+              style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <div class="single-service ">
+                <div class="single-service-content">
+                  <i class="far fa-newspaper"></i>
+                  <div class="service-main-content">
+                    <h4><a href="service-details.html">Perfil Profesional</a></h4>
+                    <p>Identificación de profesionales de la salud en todas las categorías.</p>
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInRight" data-wow-delay="0.2s"
+              style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+              <div class="single-service">
+                <div class="single-service-content">
+                  <i class="far fa-calendar"></i>
+                  <div class="service-main-content">
+                    <h4><a href="service-details.html">Registro Clínico</a></h4>
+                    <p>Registro clínico de enfermería y hoja clínica de registro.</p>
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInLeft" data-wow-delay="0.2s"
+              style="visibility: visible; animation-delay: 0.2s; animation-name: none;">
+              <div class="single-service">
+                <div class="single-service-content">
+                  <i class="far fa-tv"></i>
+                  <div class="service-main-content">
+                    <h4><a href="service-details.html">CRM</a></h4>
+                    <p>Perfil admin, nómina, estadística, inventario y coordinación.</p>
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.5s"
+              style="visibility: visible; animation-delay: 0.5s; animation-name: none;">
+              <div class="single-service">
+                <div class="single-service-content">
+                  <i class="far fa-graduation-cap"></i>
+                  <div class="service-main-content">
+                    <h4><a href="service-details.html">Educación</a></h4>
+                    <p>Educación para profesionales de la salud y pacientes.</p>
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInRight" data-wow-delay="0.2s"
+              style="visibility: visible; animation-delay: 0.2s; animation-name: none;">
+              <div class="single-service">
+                <div class="single-service-content">
+                  <i class="far fa-user-md"></i>
+                  <div class="service-main-content">
+                    <h4><a href="service-details.html">Consulta Medica</a></h4>
+                    <p>En consultorio, online o domicilio, médicos especialistas y enfermeria.</p>
+                    <p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+
+    <section class="funfact-area"
+        style="background-image: url('img/funfact-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="section-title funfact-s-title">
+                        <!--<span>Acheivement</span>-->
+                        <h3>Expereciencia</h3>
+                        <p>Lo que nos destaca.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 col-12 wow fadeInLeft" data-wow-delay="0.2">
+                    <div class="single-fact">
+                        <div class="main-count">
+                            <i class="far fa-hospital"></i>
+                            <h5><span>30</span></h5>
+                            <p>Instituciones Conectadas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="single-fact">
+                        <div class="main-count">
+                            <i class="far fa-user"></i>
+                            <h5><span >300</span><b>+</b></h5>
+                            <p>Pacientes Registrados</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="single-fact">
+                        <div class="main-count">
+                            <i class="far fa-calendar-plus"></i>
+                            <h5><span >5</span><b>+</b></h5>
+                            <p>Experiencia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="single-fact">
+                        <div class="main-count">
+                            <i class="far fa-users"></i>
+                            <h5><span >200</span></h5>
+                            <p>Colaboradores de Salud</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="department-area" id="cat">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-12">
+              <div class="section-title">
+                <!--<span>Department</span>-->
+                <h3>Categorías</h3>
+                <!--<p>It is a long established fact that a reader will be distracted.</p>-->
+              </div>
+            </div>
+          </div>
+          <div class="department-details-main">
+            <div class="row">
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                   <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/medicine(2).gif" width="50%">
+                    <h6 class="cat">Medicamentos</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/first-aid-kit.gif" width="50%">
+                    <h6 class="cat">Dispositivos</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/surgical-mask.gif" width="50%">
+                    <h6 class="cat">Desechables</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/ambulance.gif" width="50%">
+                    <h6 class="cat">Ambulacias</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/tablet.gif" width="50%">
+                    <h6 class="cat">Suplementos</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/bebe.gif" width="50%">
+                    <h6 class="cat">Bebes</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/antibiotic.gif" width="50%">
+                    <h6 class="cat">Derma</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/medicine(1).gif" width="50%">
+                    <h6 class="cat">Belleza</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/prevencion.gif" width="50%">
+                    <h6 class="cat">Prevencion</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/pharmacy.gif" width="50%">
+                    <h6 class="cat">Farmacia</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/pills.gif" width="50%">
+                    <h6 class="cat">Vitaminas</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/medicine.gif" width="50%">
+                    <h6 class="cat">Solucion</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/syringe.gif" width="50%">
+                    <h6 class="cat">Geringas</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/guante.gif" width="50%">
+                    <h6 class="cat">Guantes</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/curacion.gif" width="50%">
+                    <h6 class="cat">Curación</h6>
+                  </div>
+                </a>
+              </div>
+    
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/x-ray.gif" width="50%">
+                    <h6 class="cat">Laboratorio</h6>
+                  </div>
+                </a>
+              </div>
+    
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/wheelchair.gif" width="50%">
+                    <h6 class="cat">Discapacidad</h6>
+                  </div>
+                </a>
+              </div>
+    
+              <div class="col-2 col-c">
+                <a href="#">
+                  <div class="department-single">
+                    <!--<i class="fal fa-heartbeat"></i>--> 
+                    <img src="img/cat/hospital.gif" width="50%">
+                    <h6 class="cat">Hospitales</h6>
+                  </div>
+                </a>
+              </div>
+    
+    
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section class="testimonial-area"
+        style="background-image:url('img/bgServ.jpg'); background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="section-title testimonial-s-title">
+                        <span></span>
+                        <h3>Testimonios</h3>
+                        <p>Lo que opinan nuestros clientes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-slider owl-carousel owl-theme">
+
+                        <div class="single-testimonial">
+                            <div class="testimonial-content">
+
+                                <div class="testimonial-t-content">
+                                    <ul class="t-ratting">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <div class="t-right-icon">
+                                        <i class="far fa-thumbtack"></i>
+                                    </div>
+                                </div>
+                                <p>Estoy muy contento con los servicios de Amah Care, son enfermeros y 
+                                  Profesionales con mucho conocimiento en la medicina y la atención que tuvieron para con mi madre fue de primer nivel.</p>
+
+                                <div class="testimonial-b-content">
+                                    <div class="client-image">
+                                        <img src="img/test/test1.jpg"
+                                            alt="#">
+                                    </div>
+                                    <div class="client-title">
+                                        <h5>Adrian Gómez.</h5>
+                                        <span>Paciente</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-testimonial">
+                            <div class="testimonial-content">
+
+                                <div class="testimonial-t-content">
+                                    <ul class="t-ratting">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <div class="t-right-icon">
+                                        <i class="far fa-thumbtack"></i>
+                                    </div>
+                                </div>
+                                 <p>
+                                  Desde que inicie labores con AMAH CARE aprovecho mi tiempo libre para brindar cuidados de calidad a Domicilio, 
+                                  en clínicas y hospitales de una forma Profesional! Además los pagos en tiempo y forma!
+                                </p>
+
+                                <div class="testimonial-b-content">
+                                    <div class="client-image">
+                                        <img src="img/test/test2.jpg"
+                                            alt="#">
+                                    </div>
+                                    <div class="client-title">
+                                        <h5>Sofía Guadalupe</h5>
+                                        <span>Lic. Enfermería</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-testimonial">
+                            <div class="testimonial-content">
+
+                                <div class="testimonial-t-content">
+                                    <ul class="t-ratting">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <div class="t-right-icon">
+                                        <i class="far fa-thumbtack"></i>
+                                    </div>
+                                </div>
+                                <p>En Amah Care, mis pacientes están más tranquilos, tienen su información en todo momento y tienen acceso al e-comerce , 
+                                    todo para la salud.</p><br>
+
+
+                                <div class="testimonial-b-content">
+                                    <div class="client-image">
+                                        <img src="img/test/test3.jpg"
+                                            alt="#">
+                                    </div>
+                                    <div class="client-title">
+                                        <h5>Dr. Mario Avendaño Glz.</h5>
+                                        <span>Internista/Medicina Critica</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-testimonial">
+                            <div class="testimonial-content">
+
+                                <div class="testimonial-t-content">
+                                    <ul class="t-ratting">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <div class="t-right-icon">
+                                        <i class="far fa-thumbtack"></i>
+                                    </div>
+                                </div>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                    suffered alteration in some form, by injected humour.</p><br>
+
+
+                                <div class="testimonial-b-content">
+                                    <div class="client-image">
+                                        <img src="img/blog/doctorB.png"
+                                            alt="#">
+                                    </div>
+                                    <div class="client-title">
+                                        <h5>James M Vanderburg</h5>
+                                        <span>Patient</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-testimonial">
+                            <div class="testimonial-content">
+
+                                <div class="testimonial-t-content">
+                                    <ul class="t-ratting">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <div class="t-right-icon">
+                                        <i class="far fa-thumbtack"></i>
+                                    </div>
+                                </div>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                    suffered alteration in some form, by injected humour.</p><br>
+
+
+                                <div class="testimonial-b-content">
+                                    <div class="client-image">
+                                        <img src="img/blog/doctorB.png"
+                                            alt="#">
+                                    </div>
+                                    <div class="client-title">
+                                        <h5>Barbara J Carleton</h5>
+                                        <span>Patient</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+   <section class="doctors-area" style="background-image: url('img/porque.jpg'); background-size: cover;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-12">
+              <div class="section-title">
+               <!--<span>Doctors</span>--> 
+                <h3>Fundadores</h3>
+                <p>Tecnología de la salud para todos en todo momento.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+          
+           
+            <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="testimonial-slider owl-carousel owl-theme">
+
+                     <div class="single-testimonial" >
+                  <div class="single-doctor">
+                    <div class="doctor-head">
+                      <img src="img/4.jpg" alt="#">
+                      <div class="d-head-btn">
+                        <a href="appoinment.html" class="theme-btn primary">Ver Perfil</a>
+                      </div>
+                    </div>
+                    <div class="doctor-content">
+                      <h5><a href="doctor-details.html">Juan Carlos G.</a></h5>
+                      <span>Founder</span>
+                      <div class="doctor-social">
+                        <a > <i class="fab fa-facebook-f"></i> </a>
+                        <a > <i class="fab fa-twitter"></i> </a>
+                        <a > <i class="fab fa-linkedin-in"></i> </a>
+                        <a > <i class="fab fa-instagram"></i> </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="single-testimonial" >
+                  <div class="single-doctor">
+                    <div class="doctor-head">
+                      <img src="img/4.jpg" alt="#">
+                      <div class="d-head-btn">
+                        <a href="https://artgoritmo.github.io/" target="_blank" class="theme-btn primary">Ver Perfil</a>
+                      </div>
+                    </div>
+                    <div class="doctor-content">
+                      <h5><a href="doctor-details.html">Arturo Villavicencio</a></h5>
+                      <span>Co/Founder</span>
+                      <div class="doctor-social">
+                        <a > <i class="fab fa-facebook-f"></i> </a>
+                        <a > <i class="fab fa-twitter"></i> </a>
+                        <a > <i class="fab fa-linkedin-in"></i> </a>
+                        <a > <i class="fab fa-instagram"></i> </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                    
+
+                  
+                    <div class="single-testimonial" >
+                      <div class="single-doctor">
+                        <div class="doctor-head">
+                          <img src="img/4.jpg" alt="#">
+                          <div class="d-head-btn">
+                            <a href="appoinment.html" class="theme-btn primary">Ver Perfil</a>
+                          </div>
+                        </div>
+                        <div class="doctor-content">
+                          <h5><a href="doctor-details.html">Octavio Alberto C.</a></h5>
+                          <span>Co/Founder</span>
+                          <div class="doctor-social">
+                            <a > <i class="fab fa-facebook-f"></i> </a>
+                            <a > <i class="fab fa-twitter"></i> </a>
+                            <a > <i class="fab fa-linkedin-in"></i> </a>
+                            <a > <i class="fab fa-instagram"></i> </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              
+          <div class="owl-dots disabled"></div>
+           
+         
+          </div>
+         
+        </div>
+      </section>
+
+    <section id="contacto" class="appoinment-area"
+        style="background-image:url('https://themes.themewild.com/medicare/assets/img/appoinment-bg.jpg')" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12 wow fadeInUp" data-wow-delay="0.2s">
+
+                
+                       <div class="appoinment-inner">
+
+                            <div class="appoinment-title">
+                                <h3>Únete a nuestra red de colaboradores</h3>
+                                <p>Ayúdanos a impulsar la salud en México y Latinoamérica mediante la innovación tecnológica y soluciones más prácticas</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <div class="form-group">
+                                        <input type="text" id="Nombre" name="Name" placeholder="Nombre" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="form-group">
+                                        <input type="email" id="Correo" name="Email" placeholder="Correo" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="form-group">
+                                        <input type="text" id="Telefono" name="Phone" placeholder="Teléfono" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="form-group">
+                                        <select id="Cat">
+                                            <option value="No especificado" selected="selected">Categoría</option>
+                                            <option value="Profesional de salud">Profesional de Salud</option>
+                                            <option value="Proveedor de salu">Proveedor de salud</option>
+                                            <option value="Hospital/Organización">Hospital/Organización</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-6 col-12" style="display:none">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Date" id="datepicker">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea id="Com" name="message" placeholder="Cuentanos tu experiencia como profesional de la salud..."
+                                            required="required"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="contact-btn">
+                                        <button type="submit" onclick="registrarme()" class="theme-btn">Registrarme</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="blogs" class="blog-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="section-title">
+                       <!--<span>Blogs</span>--> 
+                        <h3>Publicaciones recientes</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
+
+                    <div class="single-blog">
+                        <div class="s-blog-head">
+                            <div class="s-blog-img">
+                                <img src="img/blog/blog2.jpg" alt="#">
+                            </div>
+                            <div class="top-meta">
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7020595834018787328/" target="_blank"><span>Feb 23, 2023</span></a>
+                            </div>
+                        </div>
+                        <div class="single-blog-content">
+                            <div class="single-blog-title">
+                                <h3><a href="blog-single-sidebar.html">AEES</a></h3>
+                                <p>
+                                    Gracias por la oportunidad a la Aceleradora de Emprendimiento para Ecosistemas de Salud Consorcio Mexicano de Hospitales y 
+                                    Amazon Web Services (AWS) que impulsan este proyecto. 
+                                </p>
+                            </div>
+
+                            <div class="blog-author">
+                                <div class="b-author-left">
+                                    <img src="img/artx.png" alt="#">
+                                </div>
+                                <div class="b-author-content">
+                                    <h6><span>by</span> <a >Amah Care</a></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 wow fadeInLeft" data-wow-delay="0.2s">
+
+                    <div class="single-blog">
+                        <div class="s-blog-head">
+                            <div class="s-blog-img">
+                                <img src="img/blog/blog1.jpg" alt="#">
+                            </div>
+                            <div class="top-meta">
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7029259723598127104/" target="_blank"><span>Feb 28, 2023</span></a>
+                            </div>
+                        </div>
+                        <div class="single-blog-content">
+                            <div class="single-blog-title">
+                                <h3><a href="blog-single-sidebar.html">Digital Health Connections</a></h3>
+                                <p>
+                                    Extraordinario evento en el cual pudimos charlar con grandes exponentes del sector Salud.
+                                    Nos llena de emoción, lo que sucederá en la categoría de #Healthtech en México y Latinoamérica 2023.
+                                </p>
+                            </div>
+
+                            <div class="blog-author">
+                                <div class="b-author-left">
+                                    <img src="img/artx.png" alt="#">
+                                </div>
+                                <div class="b-author-content">
+                                    <h6><span>by</span> <a >Amah Care</a></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 wow fadeInRight" data-wow-delay="0.2s">
+
+                    <div class="single-blog">
+                        <div class="s-blog-head">
+                            <div class="s-blog-img">
+                                <img src="img/blog/blog3.jpg" alt="#">
+                            </div>
+                            <div class="top-meta">
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7020595834018787328/" target="_blank"><span>Abr 12, 2023</span></a>
+                            </div>
+                        </div>
+                        <div class="single-blog-content">
+                            <div class="single-blog-title">
+                                <h3><a href="blog-single-sidebar.html">Grandes retos para el 2023</a></h3>
+                                <p>
+                                     AMAH CARE ® está creado para optimizar los servicios médicos centrados en el paciente 
+                                    así brindarles una atención más rápida, de mejor calidad, y más accesible para optimizar los servicios médicos.</p>
+                            </div>
+
+                            <div class="blog-author">
+                                <div class="b-author-left">
+                                    <img src="img/artx.png" alt="#">
+                                </div>
+                                <div class="b-author-content">
+                                    <h6><span>by</span> <a >Amah Care</a></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="partner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="section-title">
+                      <!--  <span>Partners</span>-->
+                        <h3>Colaboradores</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="partner-slider owl-carousel owl-theme">
+                         <div class="single-partner">
+                        <a ><img src="img/partner/visimobile.png"
+                                alt="#" width="50%"></a>
+                        </div>
+                         <div class="single-partner">
+                          <a ><img src="img/partner/vitals.jpg"
+                                  alt="#"></a>
+                      </div>
+                      <div class="single-partner">
+                        <a ><img src="img/partner/visimobile2.jpg"
+                                alt="#"></a>
+                    </div>
+                    <div class="single-partner">
+                      <a ><img src="img/partner/visimobile3.jpg"
+                              alt="#"></a>
+                  </div>
+                  <div class="single-partner">
+                    <a ><img src="img/partner/gmh.jpg"
+                            alt="#"></a>
+                </div>
+                        <div class="single-partner">
+                            <a ><img src="img/partner/aws.png"
+                                    alt="#" width="50%"></a>
+                        </div>
+                        <div class="single-partner">
+                            <a ><img src="img/partner/cmh.jpg"
+                                    alt="#"></a>
+                        </div>
+                        <div class="single-partner">
+                            <a ><img src="img/partner/enfermerosV.png"
+                                    alt="#"></a>
+                        </div>
+                        <div class="single-partner">
+                            <a ><img src="img/partner/equipoF.png"
+                                    alt="#"></a>
+                        </div>
+                        <div class="single-partner">
+                            <a ><img src="img/partner/farmaciasC.png"
+                                    alt="#"></a>
+                        </div>
+                        <div class="single-partner">
+                            <a ><img src="img/partner/infra.jpg"
+                                    alt="#"></a>
+                        </div>
+                        <div class="single-partner">
+                            <a ><img src="img/partner/jireh.jpg"
+                                    alt="#"></a>
+                        </div>
+                        <div class="single-partner">
+                            <a ><img src="img/partner/medipac.png"
+                                    alt="#"></a>
+                        </div>
+                        <div class="single-partner">
+                            <a ><img src="img/partner/mfuturo.jpg"
+                                    alt="#"></a>
+                        </div>
+                        <div class="single-partner">
+                            <a ><img src="img/partner/milenium.jpg"
+                                    alt="#"></a>
+                        </div>
+                        <div class="single-partner">
+                            <a ><img src="img/partner/oxigenoB.jpg"
+                                    alt="#"></a>
+                        </div>
+                        <div class="single-partner">
+                            <a ><img src="img/partner/samuc.png"
+                                    alt="#"></a>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <section class="news-letter-area"
+        style="background-image:url('img/newsletter.gif')">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="news-letter-content">
+                        <h3>No te pierdas ninguna actualización o novedad de Amah Care. ¡Suscríbete ahora y recibe información valiosa exclusiva para ti!</h3>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 col-12 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="n-email-submit">
+                 
+                            <div class="email-box">
+                                <div class="form-group">
+                                    <input type="email" id="CorreoNews" name="Email" placeholder="Agrega tu correo electonico aqui..." required="required">
+                                </div>
+                                <div class="e-submit-btn">
+                                    <button type="submit" onclick="registrarmeNews()" class="theme-btn">Suscrebete &nbsp;&nbsp;<i class="far fa-envelope"></i>
+                                    </button>
+                                </div>
+                            </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-area " style="background: #2c7474; background-image:url('img/foot2.jpg')">
+
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-12">
+    
+                <div class="footer-top-inner">
+                  <div class="row">
+    
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <div class="single-widget">
+                        <div class="footer-about">
+    
+                          <div class="footer-logo">
+                            <a href="index.html"><img src="img/logo-blanco.png" alt="footer-logo"></a>
+                          </div>
+                          <div class="footer-a-content">
+                            <p>
+                                En Amah contamos con un equipo multidisciplinario de profesionales en salud con empatía, 
+                                humanismo, calidad y calidez de atención y los más altos estándares de atención al paciente. 
+                                Contamos con presencia en todo México, además de alcance internacional si es que el paciente lo requiere.
+                            </p>
+                            <ul class="footer-social">
+                              <li><a href="https://www.facebook.com/AmahApp/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                              <!--<li><a href="#"><i class="fab fa-twitter"></i></a></li>-->
+                              <!--<li><a href="#"><i class="fab fa-instagram"></i></a></li>-->
+                              <li><a href="https://www.linkedin.com/company/amahcare/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                           
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 col-12">
+                      <div class="single-widget footer-q-links">
+    
+                        <div class="f-widget-title">
+                          <h3>Destacados</h3>
+                  
+                        </div>
+                        <ul>
+                          <li><a href="#" class="desplazar" moveTo="contacto" ><i class="far fa-heartbeat"></i>Contacto</a></li>
+                          <li><a href="#" class="desplazar" moveTo="about" ><i class="far fa-heartbeat"></i>Acerca de</a></li>
+                          <li><a href="#" class="desplazar" moveTo="servicios" ><i class="far fa-heartbeat"></i>Otros servicios</a></li>
+                          <li><a href="#"><i class="far fa-heartbeat"></i>Terminos y condiciones</a></li>
+                        </ul>
+                      </div>
+                    </div>
+    
+                 
+    
+                    <div class="col-lg-3 col-md-6 col-12">
+                      <div class="single-widget footer-contact">
+    
+                        <div class="f-widget-title">
+                          <h3>Dirección</h3>
+                          
+                        </div>
+                        <p>Calle 7 camelias, Numero 311, Colonia remes, Boca del Río, Veracruz, México</p>
+                        <ul class="f-contact-inner" style="display:none">
+                          <li><b>Friday - Monday</b><span>7.00-22.00</span></li>
+                          <li><b>Sunday</b><span>10.00-20.30</span></li>
+                          <li><b>Saturday - Monday</b><span>8.00-21.0</span></li>
+                        </ul>
+                          <center> <img src="img/amah_qrp.png" width="200px"> </center>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+        <div class="copyright">
+          <div class="container">
+            <div class="copyright-box">
+              <div class="row">
+    
+                <div class="col-lg-6 col-md-7 col-12">
+                  <div class="c-left-content">
+                    <p>© Copyright <span id="date">2023</span> <a href="#" >Amah Care</a> todos los derechos reservados.</p>
+                  </div>
+                </div>
+    
+                <div class="col-lg-6 col-md-5 col-12">
+                  <div class="c-right-content">
+                    <a href="#" >Centro de soporte</a>
+                    <a href="politica.html" target="_blank">Politica de privacidad</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </footer>
+
+
+
+    <script src="https://themes.themewild.com/medicare/assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/bootstrap-datepicker.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/modernizer.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/magnific-popup.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/waypoints.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/jquery.counterup.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/owl.carousel.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/cube-portfolio.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/nice-select.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/wow.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/jquery.slicknav.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/steller.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/easing.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/jquery.scrollUp.min.js"></script>
+
+    <script src="https://themes.themewild.com/medicare/assets/js/main.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    
+        <script src="js/mail-colaborador.js"></script>
+    <script src="js/mail-newsletter.js"></script>
+    <script src="js/alertas.js"></script>
+
+
+    <script type="text/javascript">
+        var links = document.querySelectorAll( '.desplazar' );
+
+    links.forEach( link =>{
+        link.addEventListener( "click",_ => {
+            
+            event.preventDefault();
+            let moveTo = link.getAttribute( 'moveTo' );
+            document.getElementById( moveTo ).scrollIntoView(true);
+
+        });
+    });
+    </script>
+    
+
+    <script src="js/wa.js?v0.1"></script>
+
+   
+
 </body>
 
 </html>
