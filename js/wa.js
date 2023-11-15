@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('#WABoton').floatingWhatsApp({
-		phone: '+522881209736', // Número WhatsApp Business
+		phone: '+522292120223', // Número WhatsApp Business
 		popupMessage: 'Hola 👋 ¿Cómo puedo ayudarte? 💚', // Mensaje pop up
 		message: "Quiero recibir información...", // Mensaje por defecto
 		showPopup: true, // Habilita el pop up
